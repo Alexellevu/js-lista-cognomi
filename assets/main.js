@@ -14,9 +14,11 @@ array.sort();
 console.log(array);
 
 //scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
-for (var i = 0; i < array.length(); i++){
+for (var i = 0; i < array.length; i++){
     if (array[i] == surname){
         console.log(i);
     }
 }
+
+document.getElementById('lista').innerHTML = "<li>"+ array + "</li>"
 
